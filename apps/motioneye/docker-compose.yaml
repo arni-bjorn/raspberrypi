@@ -1,0 +1,20 @@
+version: '3.9'
+services:
+  motioneye:
+    expose: 
+      - "8765"
+    ports: 
+      - "8765:8765"      
+    image: ccrisan/motioneye:master-armhf
+    init: true
+    restart: unless-stopped
+    environment:
+      - hostname=motioneye
+    container_name: motioneye
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/motioneye:/etc/motioneye
+      - /var/lib/motioneye:/var/lib/motioneye
+    
+    
+    
