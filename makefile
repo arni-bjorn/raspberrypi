@@ -1,4 +1,10 @@
 
+git:
+	apt install -y git	
+
+docker-compose:
+	apt install -y docker-compose
+
 docker:
 	curl -fsSL https://get.docker.com -o get-docker.sh
 	sh get-docker.sh
