@@ -6,7 +6,6 @@ services:
     ports: 
       - "8765:8765"      
     image: ccrisan/motioneye:master-armhf
-    init: true
     restart: unless-stopped
     environment:
       - hostname=motioneye
