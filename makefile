@@ -12,4 +12,4 @@ docker:
 	groups ${USER}
 
 motioneye:
-	docker-compose -f apps/motioneye/docker-compose.yaml up
+	docker-compose -f apps/motioneye/docker-compose.yaml up -d
